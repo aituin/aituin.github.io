@@ -1,3 +1,3 @@
 # aituin.github.io
 
-The source code for the personal page of this user.
+Landing page for custom GPT, Support with Sophie
