@@ -14,8 +14,11 @@
     }
     .card-img-top {
       width: 100%;
-      height: 15vw;
+      height: 350px; /* 40% taller as you had */
       object-fit: cover;
+    }
+    .card-body {
+      height: 100%;
     }
     footer {
       background-color: #f8f9fa;
@@ -24,61 +27,70 @@
       padding: 20px 0;
       margin-top: 20px;
     }
-    .card-img-top {
-      width: 100%;
-      height: 350px; /* New height with 40% increase */
-      object-fit: cover;
-    }
-    .card-body {
-      height: 100%; /* Adjust the card body height as well if necessary */
-    }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">aituin v0</a>
+    <a class="navbar-brand" href="#">Ghost in the Prompt - v0</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="disclaimers.html">Disclaimers</a>
-        </li>
-        <!-- Add additional nav items here -->
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="disclaimers.html">Disclaimers</a></li>
       </ul>
     </div>
   </nav>
 
   <div class="intro">
-    <p>AI'Tuin - a suite of tools to make life a little easier</p>
+    <p>Ghost in the Prompt – a suite of tools to make life a little easier</p>
   </div>
 
   <div class="container mt-4">
     <div class="row justify-content-center">
+
+      <!-- GPT Version Card -->
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="sophie_logo.png" class="card-img-top" alt="Support with Sophie">
-          <div class="card-body">
+          <img src="sophie_logo.png" class="card-img-top" alt="Support with Sophie (GPT)">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">GPT Version</h5>
             <p class="card-text">
-              “Support with Sophie” offers AI-powered emotional and practical guidance to help you navigate whatever you’re facing. This is not a substitute for professional care. Please reference the Disclaimers for additional details.
+              “Support with Sophie” offers AI-powered mental health support via the GPT interface. This isn’t a substitute for professional care—see Disclaimers for details.
             </p>
             <a href="https://chatgpt.com/g/g-68097d2428008191aa9ca17b9acc0268-support-with-sophie"
-               class="btn btn-primary">
-              Support with Sophie
+               class="btn btn-primary mt-auto">
+              Launch GPT Sophie
             </a>
           </div>
         </div>
       </div>
+
+      <!-- Poe Version Card -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="sophie_logo.png" class="card-img-top" alt="Support with Sophie (Poe)">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Poe Version</h5>
+            <p class="card-text">
+              The Poe-powered Sophie provides a larger free-version window (200+ messages/day), so you can chat longer before hitting any limits. As always, this is not a replacement for professional help.
+            </p>
+            <!-- Replace the href below with your actual Poe URL -->
+            <a href="https://poe.com/Support_with_Sophie"
+               class="btn btn-outline-secondary mt-auto">
+              Launch Poe Sophie
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
   <footer>
-    <p>Contact me at <a href="mailto:ai.aituin@gmail.com">ai.aituin@gmail.com</a></p>
+    <p>Contact me at <a href="mailto:ghostinthepromptai@gmail.com">ghostinthepromptai@gmail.com</a></p>
   </footer>
 
   <!-- Bootstrap JS, Popper.js, and jQuery -->
